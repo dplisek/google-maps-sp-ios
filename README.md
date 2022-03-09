@@ -1,20 +1,20 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Google Maps Swift Package for iOS
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Google doesn't yet provide Google Maps as a package for Swift Package Manager. This repository re-links and packages Google-provided binaries into xcframeworks, and exposes the xcframeworks as a Swift package.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Usage
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+To use Google Maps, add this repository as a Swift Package Manager dependency to your project.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Updating
+
+If a new version of Google-provided binaries gets released, this repository should be updated:
+
+1. Update the dependency versions in `Cartfile`.
+2. Run `carthage update`.
+3. Open `GoogleMaps.xcodeproj`. Check the file structure inside the project. The files in the project structure are pointed at files inside the `Carthage/` folder, which have just been updated in the previous step. Make sure that the files correspond, and perform any updates of the project file structure accordingly. Make sure that the file attributes stay consistent, e.g. when adding new headers, make sure that the headers are added to the same target as the existing headers, and that they are also marked as public.
+4. Open `GoogleMaps-Sim.xcodeproj`, which is structurally very similar, but points to a different set of files in the `Carthage/` folder. Perform the same respective checks.
+5. Run `make_xcframeworks.sh`. Make sure all the builds complete properly.
+6. Make sure that the `Build/` folder still contains five xcframeworks when the script finishes.
+
+When these updates are done and commited, the package now exposes updated xcframeworks, and the repository should be marked with a new tag, corresponding to the version of the Google-provided binaries.
