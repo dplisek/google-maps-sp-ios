@@ -11,8 +11,8 @@
 #import <CoreLocation/CoreLocation.h>
 
 /**
- * GMSOrientation is a tuple of heading and pitch used to control the viewing direction of a
- * GMSPanoramaCamera.
+ * GMSOrientation is a tuple of heading and pitch used to control the viewing
+ * direction of a GMSPanoramaCamera.
  */
 typedef struct {
   /**
@@ -39,7 +39,8 @@ extern "C" {
  *
  * @related GMSOrientation
  */
-inline static GMSOrientation GMSOrientationMake(CLLocationDirection heading, double pitch) {
+inline static GMSOrientation GMSOrientationMake(CLLocationDirection heading,
+                                                double pitch) {
   GMSOrientation orientation = {heading, pitch};
   return orientation;
 }

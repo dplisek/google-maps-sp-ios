@@ -20,7 +20,6 @@
  * view.
  */
 typedef struct {
-
   /** Bottom left corner of the camera. */
   CLLocationCoordinate2D nearLeft;
 

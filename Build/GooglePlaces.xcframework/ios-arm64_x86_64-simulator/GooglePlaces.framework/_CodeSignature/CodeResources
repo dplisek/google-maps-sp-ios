@@ -6,7 +6,7 @@
 	<dict>
 		<key>GooglePlaces.bundle/Info.plist</key>
 		<data>
-		4vvouujIXEbcPyf8chE/ahLC0kA=
+		M2va6z/13g4RUFxZON4o6BOhZYg=
 		</data>
 		<key>GooglePlaces.bundle/ar.lproj/GooglePlaces.strings</key>
 		<dict>
@@ -91,7 +91,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0ZtS2ZAEI9pinhvq3p8Jj0xLHUI=
+			72LqYPWtDGu28UNHPMNn4BYjlEk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0ZtS2ZAEI9pinhvq3p8Jj0xLHUI=
+			72LqYPWtDGu28UNHPMNn4BYjlEk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VssOvdlRXcPSm3Bn9Ldcv3ECcRA=
+			vIk5neBaDGs+fd3jfzYOM/qavzY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -127,7 +127,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ssagHV2uvePbUhj7woG2wq/Q0Z0=
+			zlaJZLh/KdnPSJyWAk9nEkxpnnU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -136,7 +136,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ssagHV2uvePbUhj7woG2wq/Q0Z0=
+			zlaJZLh/KdnPSJyWAk9nEkxpnnU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -181,7 +181,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rKa2UEJIDArQj9Ev9WpLgzS4KkQ=
+			fT3FIoYHItBNWgAiWrNzNqDFFX8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -347,7 +347,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			upoYOoBujOBN5orIHYEHNsAkk9U=
+			LvD5CpdxqAwBlG4dFHp8iqsksR8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -579,11 +579,11 @@
 		</data>
 		<key>Headers/GooglePlaces.h</key>
 		<data>
-		fSoNeTXbiKSr4tdIOWKwSBJ2fA0=
+		91Gecoe4gpLB2GFje16BUZk9aeM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		biEmk1kF0Ms9r60rgKw3w//qmBw=
+		SfyoF5gr27FwCxdFEniTu9OrNIk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -596,7 +596,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8/QSrY/npkCeuX7TLomQv93oCR2r+1yrRM/pWotCB7w=
+			yEdN+NnzNedRB84V3I6QeHBTk+a/jz5fktY7K9QyP6o=
 			</data>
 		</dict>
 		<key>GooglePlaces.bundle/ar.lproj/GooglePlaces.strings</key>
@@ -694,7 +694,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7VcG5+kPMuLILXqV1F6eYuCp6za+QwmAaEk4OA4vtaE=
+			xbLq3qUlyIhjRXqQQVsxwV6jhSvGgXMPgN3XA2rJKA4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -703,7 +703,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7VcG5+kPMuLILXqV1F6eYuCp6za+QwmAaEk4OA4vtaE=
+			xbLq3qUlyIhjRXqQQVsxwV6jhSvGgXMPgN3XA2rJKA4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -712,7 +712,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D1SYa5VMOUeoQgQpTvM2eiEyFpGngbUT74aBokyjhL0=
+			pP1c4okUwsROeE3VxeFkRrzrs4QWD6PNvq0qKlXcDl4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -730,7 +730,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oe6w4cpb6oHzwR3zvZOrwVo+gpbev4v7GvQDaOLgNtA=
+			kE1/ngKYOKFP47OobZ2l471wZpeGLMZskqD9xOi+1AU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -739,7 +739,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oe6w4cpb6oHzwR3zvZOrwVo+gpbev4v7GvQDaOLgNtA=
+			kE1/ngKYOKFP47OobZ2l471wZpeGLMZskqD9xOi+1AU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -784,7 +784,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DEYJ9XmwZ/R4AyLReuh5zPFxVoi3z4e4sTF3v6b+zPo=
+			iqTpo+L7OrTdsMNdpHgVPNRJO5/8uz5kqp82sygvSIE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -953,7 +953,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q6p1yJnEYFEKd+FPqmvKUHs0Ypyz7nbL+IqN2a/qlfQ=
+			E3nzZbpsqDb60jdNnoRdJbH/s605oJNjQpg8ASzkVSw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1268,7 +1268,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LzK5st5PT/6Is/EP00NdUUKF31+xEBfbbCPpPlcKVXU=
+			+1BlKkYoqPbss8ZKHSQ57EymPYHZyH+cFDpVMgAaSC8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
