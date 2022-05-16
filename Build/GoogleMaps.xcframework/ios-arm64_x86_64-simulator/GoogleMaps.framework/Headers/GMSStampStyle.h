@@ -40,7 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
  * @param image A @c UIImage object to use as the stamp image.
  * @return An initialized texture stamp style.
  */
-+ (instancetype)textureStyleWithImage:(UIImage *)image NS_SWIFT_UNAVAILABLE("Use initializer instead");
++ (instancetype)textureStyleWithImage:(UIImage *)image
+    NS_SWIFT_UNAVAILABLE("Use initializer instead");
 
 /**
  * Returns an initialized texture stamp style with the given image.
