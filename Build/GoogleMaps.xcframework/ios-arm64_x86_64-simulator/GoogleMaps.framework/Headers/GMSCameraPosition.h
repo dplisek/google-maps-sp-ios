@@ -5,7 +5,7 @@
 //  Copyright 2013 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <CoreGraphics/CoreGraphics.h>
@@ -13,14 +13,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- * An immutable class that aggregates all camera position parameters.
- */
+/** An immutable class that aggregates all camera position parameters. */
 @interface GMSCameraPosition : NSObject <NSCopying, NSMutableCopying>
 
-/**
- * Location on the Earth towards which the camera points.
- */
+/** Location on the Earth towards which the camera points. */
 @property(nonatomic, readonly) CLLocationCoordinate2D target;
 
 /**
@@ -30,9 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, readonly) float zoom;
 
-/**
- * Bearing of the camera, in degrees clockwise from true north.
- */
+/** Bearing of the camera, in degrees clockwise from true north. */
 @property(nonatomic, readonly) CLLocationDirection bearing;
 
 /**
@@ -107,9 +101,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (instancetype)cameraWithTarget:(CLLocationCoordinate2D)target zoom:(float)zoom;
 
-/**
- * Convenience constructor for GMSCameraPosition, as per cameraWithTarget:zoom:.
- */
+/** Convenience constructor for GMSCameraPosition, as per cameraWithTarget:zoom:. */
 + (instancetype)cameraWithLatitude:(CLLocationDegrees)latitude
                          longitude:(CLLocationDegrees)longitude
                               zoom:(float)zoom;

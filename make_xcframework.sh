@@ -1,7 +1,6 @@
 #!/bin/bash
 
 BUILD_DIRECTORY="Build"
-CARTHAGE_XCFRAMEWORK_DIRECTORY="Carthage/Build/"
 
 function archive_project() {
   project_name=$1
@@ -43,9 +42,6 @@ function create_xcframework() {
 }
 
 function prepare() {
-  # Install Google Maps SDK for iOS.
-  carthage bootstrap
-  
   # Recreate Build directory.
   if [ -d "$BUILD_DIRECTORY" ]; then
     rm -r $BUILD_DIRECTORY
@@ -69,7 +65,6 @@ function build_xcproject_project() {
   create_xcframework "GoogleMaps" "GoogleMaps"
   create_xcframework "GoogleMaps" "GoogleMapsBase"
   create_xcframework "GoogleMaps" "GoogleMapsCore"
-  create_xcframework "GoogleMaps" "GoogleMapsM4B"
   create_xcframework "GoogleMaps" "GooglePlaces"
   
   cleanup

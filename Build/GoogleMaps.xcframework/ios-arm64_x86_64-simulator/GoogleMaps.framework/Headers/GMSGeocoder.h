@@ -5,7 +5,7 @@
 //  Copyright 2012 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <CoreLocation/CoreLocation.h>
@@ -21,9 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @{
  */
 
-/**
- * GMSGeocoder error codes, embedded in NSError.
- */
+/** GMSGeocoder error codes, embedded in NSError. */
 typedef NS_ENUM(NSInteger, GMSGeocoderErrorCode) {
   kGMSGeocoderErrorInvalidCoordinate = 1,
   kGMSGeocoderErrorInternal,

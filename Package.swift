@@ -25,12 +25,6 @@ let package = Package(
             ]
         ),
         .library(
-            name: "GoogleMapsM4B",
-            targets: [
-                "GoogleMapsM4B"
-            ]
-        ),
-        .library(
             name: "GooglePlaces",
             targets: [
                 "GooglePlaces",
@@ -50,10 +44,6 @@ let package = Package(
         .binaryTarget(
             name: "GoogleMapsCore",
             path: "Build/GoogleMapsCore.xcframework"
-        ),
-        .binaryTarget(
-            name: "GoogleMapsM4B",
-            path: "Build/GoogleMapsM4B.xcframework"
         ),
         .binaryTarget(
             name: "GooglePlaces",

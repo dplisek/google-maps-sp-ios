@@ -5,7 +5,7 @@
 //  Copyright 2012 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <UIKit/UIKit.h>
@@ -23,19 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface GMSPolyline : GMSOverlay
 
-/**
- * The path that describes this polyline.
- */
+/** The path that describes this polyline. */
 @property(nonatomic, copy, nullable) GMSPath *path;
 
-/**
- * The width of the line in screen points. Defaults to 1.
- */
+/** The width of the line in screen points. Defaults to 1. */
 @property(nonatomic) CGFloat strokeWidth;
 
-/**
- * The UIColor used to render the polyline. Defaults to [UIColor blueColor].
- */
+/** The UIColor used to render the polyline. Defaults to [UIColor blueColor]. */
 @property(nonatomic) UIColor *strokeColor;
 
 /** Whether this line should be rendered with geodesic correction. */

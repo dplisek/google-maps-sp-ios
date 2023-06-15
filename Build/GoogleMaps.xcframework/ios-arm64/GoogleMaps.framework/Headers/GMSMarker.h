@@ -5,7 +5,7 @@
 //  Copyright 2012 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <UIKit/UIKit.h>
@@ -95,9 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic) GMSMarkerAnimation appearAnimation;
 
-/**
- * Controls whether this marker can be dragged interactively (default NO).
- */
+/** Controls whether this marker can be dragged interactively (default NO). */
 @property(nonatomic, getter=isDraggable) BOOL draggable;
 
 /**
@@ -117,14 +115,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic) CLLocationDegrees rotation;
 
-/**
- * Sets the opacity of the marker, between 0 (completely transparent) and 1 (default) inclusive.
- */
+/** Sets the opacity of the marker, between 0 (completely transparent) and 1 (default) inclusive. */
 @property(nonatomic) float opacity;
 
-/**
- * Provides the Core Animation layer for this GMSMarker.
- */
+/** Provides the Core Animation layer for this GMSMarker. */
 @property(nonatomic, readonly) GMSMarkerLayer *layer;
 
 /**

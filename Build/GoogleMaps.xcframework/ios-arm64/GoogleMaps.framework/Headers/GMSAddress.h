@@ -5,7 +5,7 @@
 //  Copyright 2014 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <CoreLocation/CoreLocation.h>
@@ -51,16 +51,12 @@ NS_ASSUME_NONNULL_BEGIN
 /** An array of NSString containing formatted lines of the address. May be nil. */
 @property(nonatomic, copy, readonly, nullable) NSArray<NSString *> *lines;
 
-/**
- * Returns the first line of the address.
- */
+/** Returns the first line of the address. */
 - (nullable NSString *)addressLine1 __GMS_AVAILABLE_BUT_DEPRECATED_MSG(
     "This method is obsolete and will be removed in a future release. Use the lines property "
     "instead.");
 
-/**
- * Returns the second line of the address.
- */
+/** Returns the second line of the address. */
 - (nullable NSString *)addressLine2 __GMS_AVAILABLE_BUT_DEPRECATED_MSG(
     "This method is obsolete and will be removed in a future release. Use the lines property "
     "instead.");
@@ -68,8 +64,8 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 /**
- * The former type of geocode results (pre-1.7). This remains here for migration and will be
- * removed in future releases.
+ * The former type of geocode results (pre-1.7). This remains here for migration and will be removed
+ * in future releases.
  */
 @compatibility_alias GMSReverseGeocodeResult GMSAddress;
 

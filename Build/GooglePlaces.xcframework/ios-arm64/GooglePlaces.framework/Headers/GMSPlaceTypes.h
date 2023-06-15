@@ -5,7 +5,7 @@
 //  Copyright 2016 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <Foundation/Foundation.h>
@@ -17,7 +17,7 @@
 
 /**
  * The constants for the Table 1 place types for the API. Complete list can be found at
- * https://developers.google.com/places/documentation/supported_types
+ * https://developers.google.com/maps/documentation/places/ios-sdk/supported_types
  */
 extern NSString *const kGMSPlaceTypeAccounting;
 extern NSString *const kGMSPlaceTypeAirport;
@@ -119,7 +119,7 @@ extern NSString *const kGMSPlaceTypeZoo;
 
 /**
  * The constants for Table 2 additional types returned by the Places service. Complete list can be
- * found at https://developers.google.com/places/documentation/supported_types.
+ * found at https://developers.google.com/maps/documentation/places/ios-sdk/supported_types.
  * Note: The types below are not supported in the type filter of a place search.
  */
 extern NSString *const kGMSPlaceTypeAdministrativeAreaLevel1;
@@ -161,5 +161,14 @@ extern NSString *const kGMSPlaceTypeSublocalityLevel4;
 extern NSString *const kGMSPlaceTypeSublocalityLevel5;
 extern NSString *const kGMSPlaceTypeSubpremise;
 extern NSString *const kGMSPlaceTypeTownSquare;
+
+/**
+ * The constants for the Table 3 types for the API. Complete list can be found at
+ * https://developers.google.com/maps/documentation/places/ios-sdk/supported_types
+ * NOTE: Geocode and Establishment are found in table 2.
+ */
+extern NSString *const kGMSPlaceTypeCollectionAddress;
+extern NSString *const kGMSPlaceTypeCollectionRegion;
+extern NSString *const kGMSPlaceTypeCollectionCity;
 
 /**@}*/

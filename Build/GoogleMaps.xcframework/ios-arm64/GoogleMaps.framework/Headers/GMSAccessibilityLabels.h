@@ -1,4 +1,20 @@
+//
+//  GMSAccessibilityLabels.h
+//  Google Maps SDK for iOS
+//
+//  Copyright 2022 Google LLC
+//
+//  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
+//  Service: https://cloud.google.com/maps-platform/terms
+//
+
 #import <Foundation/Foundation.h>
+
+/**
+ * A previous version of this API contained this misspelling, this preserves compatibility with old
+ * versions. Use kGMSAccessibilityOutOfQuota instead.
+ */
+#define kGMSAccessiblityOutOfQuota kGMSAccessibilityOutOfQuota;
 
 /**
  * Accessibility identifier for the compass button.
@@ -19,4 +35,4 @@ extern NSString *const kGMSAccessibilityMyLocation;
  *
  * @related GMSMapView
  */
-extern NSString *const kGMSAccessiblityOutOfQuota;
+extern NSString *const kGMSAccessibilityOutOfQuota;

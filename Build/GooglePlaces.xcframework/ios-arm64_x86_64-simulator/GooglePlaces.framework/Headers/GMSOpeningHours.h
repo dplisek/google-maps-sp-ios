@@ -5,7 +5,7 @@
 //  Copyright 2018 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <Foundation/Foundation.h>
@@ -17,19 +17,20 @@ NS_ASSUME_NONNULL_BEGIN
  * @{
  */
 
-/**
- * Describes the current open status of a place.
- */
+/** Describes the current open status of a place. */
 typedef NS_ENUM(NSInteger, GMSOpenNowStatus) {
   /** The place is open now. */
   GMSOpenNowStatusYes,
+
   /** The place is not open now. */
   GMSOpenNowStatusNo,
+
   /** Whether the place is open now is unknown. */
   GMSOpenNowStatusUnknown,
 };
 
 /**@}*/
+
 
 /**
  * \defgroup DayOfWeek GMSDayOfWeek
@@ -52,36 +53,24 @@ typedef NS_ENUM(NSUInteger, GMSDayOfWeek) {
 
 /**@}*/
 
-/**
- * A class representing time in hours and minutes in a 24hr clock.
- */
+/** A class representing time in hours and minutes in a 24hr clock. */
 @interface GMSTime : NSObject
 
-/**
- * The hour representation of time in a day. (Range is between 0-23).
- */
+/** The hour representation of time in a day. (Range is between 0-23). */
 @property(nonatomic, readonly, assign) NSUInteger hour;
 
-/**
- * The minute representation of time in a 1 hr period. (Range is between 0-59).
- */
+/** The minute representation of time in a 1 hr period. (Range is between 0-59). */
 @property(nonatomic, readonly, assign) NSUInteger minute;
 
 @end
 
-/**
- * A class representing a open/close event in |GMSPeriod|.
- */
+/** A class representing a open/close event in |GMSPeriod|. */
 @interface GMSEvent : NSObject
 
-/**
- * Day of week the associated with the event.
- */
+/** Day of week the associated with the event. */
 @property(nonatomic, readonly, assign) GMSDayOfWeek day;
 
-/**
- * The representation of time of the event in 24hr clock.
- */
+/** The representation of time of the event in 24hr clock. */
 @property(nonatomic, readonly, strong) GMSTime *time;
 
 @end
@@ -100,17 +89,12 @@ typedef NS_ENUM(NSUInteger, GMSDayOfWeek) {
  */
 @property(nonatomic, readonly, strong) GMSEvent *openEvent;
 
-/**
- * The close event of this period.
- * Can be nil if period is open 24hrs.
- */
+/** The close event of this period. Can be nil if period is open 24hrs. */
 @property(nullable, nonatomic, readonly, strong) GMSEvent *closeEvent;
 
 @end
 
-/**
- * A class to handle storing and accessing opening hours information for |GMSPlace|.
- */
+/** A class to handle storing and accessing opening hours information for |GMSPlace|. */
 @interface GMSOpeningHours : NSObject
 
 /**
@@ -130,6 +114,7 @@ typedef NS_ENUM(NSUInteger, GMSDayOfWeek) {
  *       Do not use the GMSDayOfWeek enum to index into the array.
  */
 @property(nullable, nonatomic, readonly, strong) NSArray<NSString *> *weekdayText;
+
 
 @end
 

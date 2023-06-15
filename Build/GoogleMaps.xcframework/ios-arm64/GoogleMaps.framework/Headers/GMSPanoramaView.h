@@ -5,7 +5,7 @@
 //  Copyright 2013 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <CoreLocation/CoreLocation.h>
@@ -38,9 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)panoramaView:(GMSPanoramaView *)view willMoveToPanoramaID:(NSString *)panoramaID;
 
-/**
- * This is invoked every time the |view|.panorama property changes.
- */
+/** This is invoked every time the |view|.panorama property changes. */
 - (void)panoramaView:(GMSPanoramaView *)view didMoveToPanorama:(nullable GMSPanorama *)panorama;
 
 /**
@@ -51,16 +49,12 @@ NS_ASSUME_NONNULL_BEGIN
     didMoveToPanorama:(GMSPanorama *)panorama
        nearCoordinate:(CLLocationCoordinate2D)coordinate;
 
-/**
- * Called when moveNearCoordinate: produces an error.
- */
+/** Called when moveNearCoordinate: produces an error. */
 - (void)panoramaView:(GMSPanoramaView *)view
                    error:(NSError *)error
     onMoveNearCoordinate:(CLLocationCoordinate2D)coordinate;
 
-/**
- * Called when moveToPanoramaID: produces an error.
- */
+/** Called when moveToPanoramaID: produces an error. */
 - (void)panoramaView:(GMSPanoramaView *)view
                  error:(NSError *)error
     onMoveToPanoramaID:(NSString *)panoramaID;
@@ -159,9 +153,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic) BOOL navigationLinksHidden;
 
-/**
- * Controls whether the street name overlays are hidden or visible (default).
- */
+/** Controls whether the street name overlays are hidden or visible (default). */
 @property(nonatomic) BOOL streetNamesHidden;
 
 /**
@@ -170,19 +162,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic) GMSPanoramaCamera *camera;
 
-/**
- * Accessor for the custom CALayer type used for the layer.
- */
+/** Accessor for the custom CALayer type used for the layer. */
 @property(nonatomic, readonly, retain) GMSPanoramaLayer *layer;
 
-/**
- * Animates the camera of this GMSPanoramaView to |camera|, over |duration| (specified in seconds).
+/** Animates the camera of this GMSPanoramaView to |camera|, over |duration| (specified in seconds).
  */
 - (void)animateToCamera:(GMSPanoramaCamera *)camera animationDuration:(NSTimeInterval)duration;
 
-/**
- * Modifies the camera according to |cameraUpdate|, over |duration| (specified in seconds).
- */
+/** Modifies the camera according to |cameraUpdate|, over |duration| (specified in seconds). */
 - (void)updateCamera:(GMSPanoramaCameraUpdate *)cameraUpdate
     animationDuration:(NSTimeInterval)duration;
 

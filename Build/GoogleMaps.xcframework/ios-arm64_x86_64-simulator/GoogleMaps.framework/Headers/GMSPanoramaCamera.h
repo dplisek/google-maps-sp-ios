@@ -5,7 +5,7 @@
 //  Copyright 2013 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <CoreLocation/CoreLocation.h>
@@ -44,9 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (instancetype)cameraWithOrientation:(GMSOrientation)orientation zoom:(float)zoom FOV:(double)FOV;
 
-/**
- * Convenience constructor for GMSPanoramaCamera, specifying all camera properties.
- */
+/** Convenience constructor for GMSPanoramaCamera, specifying all camera properties. */
 + (instancetype)cameraWithHeading:(CLLocationDirection)heading
                             pitch:(double)pitch
                              zoom:(float)zoom
@@ -71,9 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, readonly) float zoom;
 
-/**
- * The camera orientation, which groups together heading and pitch.
- */
+/** The camera orientation, which groups together heading and pitch. */
 @property(nonatomic, readonly) GMSOrientation orientation;
 
 @end

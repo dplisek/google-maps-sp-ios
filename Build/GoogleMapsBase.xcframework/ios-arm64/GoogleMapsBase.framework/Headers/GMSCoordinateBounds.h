@@ -5,7 +5,7 @@
 //  Copyright 2013 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <CoreLocation/CoreLocation.h>
@@ -25,8 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly) CLLocationCoordinate2D southWest;
 
 /**
- * Returns NO if this bounds does not contain any points. For example,
- * [[GMSCoordinateBounds alloc] init].valid == NO.
+ * Returns NO if this bounds does not contain any points. For example, [[GMSCoordinateBounds alloc]
+ * init].valid == NO.
  *
  * When an invalid bounds is expanded with valid coordinates via includingCoordinate: or
  * includingBounds:, the resulting bounds will be valid but contain only the new coordinates.

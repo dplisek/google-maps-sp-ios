@@ -5,16 +5,14 @@
 //  Copyright 2016 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- * The metadata corresponding to a single photo associated with a place.
- */
+/** The metadata corresponding to a single photo associated with a place. */
 @interface GMSPlacePhotoMetadata : NSObject
 
 /**
@@ -28,14 +26,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, readonly, copy, nullable) NSAttributedString *attributions;
 
-/**
- * The maximum pixel size in which this photo is available.
- */
+/** The maximum pixel size in which this photo is available. */
 @property(nonatomic, readonly, assign) CGSize maxSize;
 
-/**
- * Initializer is not available.
- */
+/** Initializer is not available. */
 - (instancetype)init NS_UNAVAILABLE;
 
 @end

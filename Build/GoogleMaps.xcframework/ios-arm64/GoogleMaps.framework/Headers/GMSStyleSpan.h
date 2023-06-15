@@ -5,7 +5,7 @@
 //  Copyright 2019 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <UIKit/UIKit.h>
@@ -13,18 +13,19 @@
 #import "GMSStrokeStyle.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
 /** Describes the style for some region of a polyline. */
 @interface GMSStyleSpan : NSObject
 
 /**
- * Factory returning a solid color span of length one segment. Equivalent to
- * [GMSStyleSpan spanWithStyle:[GMSStrokeStyle solidColor:|color|] segments:1].
+ * Factory returning a solid color span of length one segment. Equivalent to [GMSStyleSpan
+ * spanWithStyle:[GMSStrokeStyle solidColor:|color|] segments:1].
  */
 + (instancetype)spanWithColor:(UIColor *)color;
 
 /**
- * Factory returning a solid color span with a given number of segments. Equivalent to
- * [GMSStyleSpan spanWithStyle:[GMSStrokeStyle solidColor:|color|] segments:|segments|].
+ * Factory returning a solid color span with a given number of segments. Equivalent to [GMSStyleSpan
+ * spanWithStyle:[GMSStrokeStyle solidColor:|color|] segments:|segments|].
  */
 + (instancetype)spanWithColor:(UIColor *)color segments:(double)segments;
 
@@ -35,8 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)spanWithStyle:(GMSStrokeStyle *)style;
 
 /**
- * Factory returning a span with the given |style| and length in number of segments.
- * |segments| must be greater than 0 (i.e. can't be 0).
+ * Factory returning a span with the given |style| and length in number of segments. |segments| must
+ * be greater than 0 (i.e. can't be 0).
  */
 + (instancetype)spanWithStyle:(GMSStrokeStyle *)style segments:(double)segments;
 

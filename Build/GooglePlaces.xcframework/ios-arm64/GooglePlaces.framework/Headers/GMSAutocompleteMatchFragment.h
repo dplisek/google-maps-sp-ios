@@ -5,7 +5,7 @@
 //  Copyright 2016 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 
@@ -25,14 +25,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, readonly) NSUInteger offset;
 
-/**
- * The length of the matched fragment.
- */
+/** The length of the matched fragment. */
 @property(nonatomic, readonly) NSUInteger length;
 
-/**
- * Initializer is not available.
- */
+/** Initializer is not available. */
 - (instancetype)init NS_UNAVAILABLE;
 
 @end

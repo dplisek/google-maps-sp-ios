@@ -5,18 +5,18 @@
 //  Copyright 2016 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <UIKit/UIKit.h>
 
-#import "GMSAutocompleteFilter.h"
-#import "GMSAutocompletePrediction.h"
-#import "GMSPlace.h"
 #import "GMSPlaceFieldMask.h"
 #import "GMSPlacesDeprecationUtils.h"
 
+@class GMSAutocompleteFilter;
+@class GMSAutocompletePrediction;
 @class GMSAutocompleteTableDataSource;
+@class GMSPlace;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,6 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Called when a place has been selected from the available autocomplete predictions.
+ *
  * @param tableDataSource The |GMSAutocompleteTableDataSource| that generated the event.
  * @param place The |GMSPlace| that was returned.
  */
@@ -48,6 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
  * <li>kGMSPlacesInternalError
  * </ul>
  * All other error codes are non-retryable.
+ *
  * @param tableDataSource The |GMSAutocompleteTableDataSource| that generated the event.
  * @param error The |NSError| that was returned.
  */
@@ -60,6 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
  * Called when the user selects an autocomplete prediction from the list but before requesting
  * place details. Returning NO from this method will suppress the place details fetch and
  * didAutocompleteWithPlace will not be called.
+ *
  * @param tableDataSource The |GMSAutocompleteTableDataSource| that generated the event.
  * @param prediction The |GMSAutocompletePrediction| that was selected.
  */
@@ -68,6 +71,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Called once every time new autocomplete predictions are received.
+ *
  * @param tableDataSource The |GMSAutocompleteTableDataSource| that generated the event.
  */
 - (void)didUpdateAutocompletePredictionsForTableDataSource:
@@ -75,6 +79,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Called once immediately after a request for autocomplete predictions is made.
+ *
  * @param tableDataSource The |GMSAutocompleteTableDataSource| that generated the event.
  */
 - (void)didRequestAutocompletePredictionsForTableDataSource:
@@ -136,7 +141,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, assign) GMSPlaceField placeFields;
 
-/** Designated initializer */
+
+/** Initializes a data source. */
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 
 /**

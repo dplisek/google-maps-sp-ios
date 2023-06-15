@@ -5,7 +5,7 @@
 //  Copyright 2016 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <CoreLocation/CoreLocation.h>
@@ -27,9 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @{
  */
 
-/**
- * Describes the price level of a place.
- */
+/** Describes the price level of a place. */
 typedef NS_ENUM(NSInteger, GMSPlacesPriceLevel) {
   kGMSPlacesPriceLevelUnknown = -1,
   kGMSPlacesPriceLevelFree = 0,
@@ -46,14 +44,14 @@ typedef NS_ENUM(NSInteger, GMSPlacesPriceLevel) {
  * @{
  */
 
-/**
- * Describes the open status of a place.
- */
+/** Describes the open status of a place. */
 typedef NS_ENUM(NSInteger, GMSPlaceOpenStatus) {
   /** The place's open status is unknown. */
   GMSPlaceOpenStatusUnknown,
+
   /** The place is open. */
   GMSPlaceOpenStatusOpen,
+
   /** The place is not open. */
   GMSPlaceOpenStatusClosed,
 };
@@ -65,21 +63,41 @@ typedef NS_ENUM(NSInteger, GMSPlaceOpenStatus) {
  * @{
  */
 
-/**
- * Describes the business status of a place.
- */
+/** Describes the business status of a place. */
 typedef NS_ENUM(NSInteger, GMSPlacesBusinessStatus) {
   /** The business status is not known. */
   GMSPlacesBusinessStatusUnknown,
+
   /** The business is operational. */
   GMSPlacesBusinessStatusOperational,
+
   /** The business is closed temporarily. */
   GMSPlacesBusinessStatusClosedTemporarily,
+
   /** The business is closed permanently. */
   GMSPlacesBusinessStatusClosedPermanently,
 };
 
 /**@}*/
+
+
+/**
+ * \defgroup BooleanPlaceAttribute GMSBooleanPlaceAttribute
+ * @{
+ */
+
+/** Describes whether a place’s boolean attribute is available or not. */
+typedef NS_ENUM(NSInteger, GMSBooleanPlaceAttribute) {
+  /** The place's attribute has not been requested yet, or not known. */
+  GMSBooleanPlaceAttributeUnknown,
+  /** The place’s attribute is available. */
+  GMSBooleanPlaceAttributeTrue,
+  /** The place’s attribute is not available. */
+  GMSBooleanPlaceAttributeFalse,
+};
+
+/**@}*/
+
 
 /**
  * Represents a particular physical place. A GMSPlace encapsulates information about a physical
@@ -107,9 +125,7 @@ typedef NS_ENUM(NSInteger, GMSPlacesBusinessStatus) {
  */
 @property(nonatomic, copy, readonly, nullable) NSString *phoneNumber;
 
-/**
- * Address of the place as a simple string.
- */
+/** Address of the place as a simple string. */
 @property(nonatomic, copy, readonly, nullable) NSString *formattedAddress;
 
 /**
@@ -167,40 +183,29 @@ typedef NS_ENUM(NSInteger, GMSPlacesBusinessStatus) {
  */
 @property(nonatomic, copy, readonly, nullable) NSArray<GMSAddressComponent *> *addressComponents;
 
-/**
- * The Plus code representation of location for this place.
- */
+/** The Plus code representation of location for this place. */
 @property(nonatomic, strong, readonly, nullable) GMSPlusCode *plusCode;
 
 /**
- * The Opening Hours information for this place.
- * Includes open status, periods and weekday text when available.
+ * The normal business Opening Hours information for this place. Includes open status, periods and
+ * weekday text when available.
  */
 @property(nonatomic, strong, readonly, nullable) GMSOpeningHours *openingHours;
 
-/**
- * Represents how many reviews make up this place's rating.
- */
+
+/** Represents how many reviews make up this place's rating. */
 @property(nonatomic, readonly, assign) NSUInteger userRatingsTotal;
 
-/**
- * An array of |GMSPlacePhotoMetadata| objects representing the photos of the place.
- */
+/** An array of |GMSPlacePhotoMetadata| objects representing the photos of the place. */
 @property(nonatomic, copy, readonly, nullable) NSArray<GMSPlacePhotoMetadata *> *photos;
 
-/**
- * The timezone UTC offset of the place in minutes.
- */
+/** The timezone UTC offset of the place in minutes. */
 @property(nonatomic, readonly, nullable) NSNumber *UTCOffsetMinutes;
 
-/**
- * The |GMSPlaceBusinessStatus| of the place.
- */
+/** The |GMSPlaceBusinessStatus| of the place. */
 @property(nonatomic, readonly) GMSPlacesBusinessStatus businessStatus;
 
-/**
- * Default init is not available.
- */
+/** Default init is not available. */
 - (instancetype)init NS_UNAVAILABLE;
 
 /**
@@ -221,9 +226,7 @@ typedef NS_ENUM(NSInteger, GMSPlacesBusinessStatus) {
  */
 - (GMSPlaceOpenStatus)isOpen;
 
-/**
- * Background color of the icon according to Place type, to color the view behind the icon.
- */
+/** Background color of the icon according to Place type, to color the view behind the icon. */
 @property(nonatomic, readonly, nullable) UIColor *iconBackgroundColor;
 
 /**
@@ -232,6 +235,47 @@ typedef NS_ENUM(NSInteger, GMSPlacesBusinessStatus) {
  * type.
  */
 @property(nonatomic, readonly, nullable) NSURL *iconImageURL;
+
+
+/** Place Attribute for takeout experience. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute takeout;
+
+/** Place Attribute for delivery services. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute delivery;
+
+/** Place Attribute for dine in experience. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute dineIn;
+
+/** Place Attribute for curbside pickup services. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute curbsidePickup;
+
+/** Place Attribute indicating place is popular with tourists. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute reservable;
+
+/** Place Attribute indicating place serves breakfast. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute servesBreakfast;
+
+/** Place Attribute indicating place serves lunch. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute servesLunch;
+
+/** Place Attribute indicating place serves dinner. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute servesDinner;
+
+/** Place Attribute indicating place serves beer. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute servesBeer;
+
+/** Place Attribute indicating place serves wine. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute servesWine;
+
+/** Place Attribute indicating place serves brunch. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute servesBrunch;
+
+/** Place Attribute indicating place serves vegetarian food. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute servesVegetarianFood;
+
+/** Place Attribute indicating place is wheelchair accessible at the entrance. */
+@property(nonatomic, readonly) GMSBooleanPlaceAttribute wheelchairAccessibleEntrance;
+
 
 @end
 

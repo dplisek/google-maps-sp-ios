@@ -5,7 +5,7 @@
 //  Copyright 2019 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <UIKit/UIKit.h>
@@ -29,6 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** Creates a gradient stroke style interpolating from |fromColor| to |toColor|. */
 + (instancetype)gradientFromColor:(UIColor *)fromColor toColor:(UIColor *)toColor;
+
+/** Creates a transparent stroke style and sets the stampStyle. */
++ (instancetype)transparentStrokeWithStampStyle:(GMSStampStyle *)stampStyle;
 
 @end
 

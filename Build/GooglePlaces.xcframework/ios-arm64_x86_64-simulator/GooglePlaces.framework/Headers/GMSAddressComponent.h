@@ -5,7 +5,7 @@
 //  Copyright 2016 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <Foundation/Foundation.h>
@@ -14,9 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- * Represents a component of an address, e.g., street number, postcode, city, etc.
- */
+/** Represents a component of an address, e.g., street number, postcode, city, etc. */
 @interface GMSAddressComponent : NSObject
 
 /**

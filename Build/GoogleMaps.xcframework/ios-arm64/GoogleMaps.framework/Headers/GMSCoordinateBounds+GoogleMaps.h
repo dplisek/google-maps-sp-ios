@@ -5,7 +5,7 @@
 //  Copyright 2013 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 
@@ -22,19 +22,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GMSCoordinateBounds (GoogleMaps)
 
-/**
- * Inits with bounds that encompass |region|.
- */
+/** Inits with bounds that encompass |region|. */
 - (id)initWithRegion:(GMSVisibleRegion)region;
 
-/**
- * Inits with bounds that encompass |path|.
- */
+/** Inits with bounds that encompass |path|. */
 - (id)initWithPath:(GMSPath *)path;
 
-/**
- * Returns a GMSCoordinateBounds representing the current bounds extended to include |path|.
- */
+/** Returns a GMSCoordinateBounds representing the current bounds extended to include |path|. */
 - (GMSCoordinateBounds *)includingPath:(GMSPath *)path;
 
 @end
